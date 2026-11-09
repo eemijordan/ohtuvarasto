@@ -18,3 +18,5 @@ jobs:
         run: uv sync
       - name: Run tests
         run: uv run coverage run --branch -m pytest
+      - name: Lint
+        run: uv run pylint src
